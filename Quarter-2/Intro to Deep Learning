@@ -1,0 +1,191 @@
+What is ML?
+Fundamental concepts of ML
+Four branches of ML
+What is deep learning
+how it works ?
+what can we achieve ?
+Neural networks and Deep learnning
+Applications of Deep learning
+ 
+Branches of AI:
+
+What is intelligence?
+practical and experimentation makes human learn something and using this learning this knowledge if something new comes in front of him he uses his previous knowledge to solve that problem in efficient manner.
+Intelligence introduced into machines is known as AI
+
+Symbolic AI or classical programming:
+- handcrafted rules are called classical programming
+- all logics are written by user
+
+Machine Learning:
+- machine should have ability to learn from data not from handcrafted rules
+
+Deep learning:
+- Artificial Neural networks
+- Feature engineering is automated in Deep learning
+
+Feature engineering:
+- which parts should be given input
+- features given for input
+
+Artificial Intelligence:
+- if machine is able to think
+- intellectual tasks to be done my machines is AI
+- intellectual tasks can't be done by symbolic AI
+
+Turing Test was introduced by Alan Turing.
+
+Machine Learning:
+- Learn from data nont by handcrafted rules
+
+Classical Programs: (Symbolic AI)
+Input + Programs(rules/logic) = output
+given to machine => out from machine
+
+Machine learning/ Deep Learning:
+input + output => Program(rules/logic)
+
+Essential Things in ML/DL:
+- Input Data
+- Expected output
+- Accuracy of prediction
+
+Deep Learning:
+- inspired by human brain
+- artificial NN
+- no evidence that Artificial NN works like human brain
+- Artificial NN works on stats and maths whereas human brain works very differently
+- Feature engineering is automated in DL
+
+NN for handwriting recognition:
+picture input(any number) -> layers of NN -> output classified by NN
+picture + label
+
+DL is also known as multi-staged learning
+All layers learn simultaneously
+These all layers work to learn something to learn a specific pattern/features
+Final layer gives output
+
+Understanding how deeplearning works: (fig 1.1)
+Algos of ML and DL working:
+Y = WX + B
+
+{
+    x = input
+    Y = output
+    Algorithms find:(weights)
+    W = cofficient
+    B = intercept
+}
+
+Backpropagation : Adjusting the weights
+Least Loss
+
+Is this an start towards terminator robots:
+- AGI / ANI -> (general/narrow)
+
+Brief history of ML:
+Algos of ML:
+- learning from data
+Probabilistic Modeling:
+(stats, probability, Naive Bayes, Classification algo)
+
+Early Neural network:
+- was written in 1950's
+- huge amount of data is reqd for NN
+- good hardware reqd
+
+Kernel Method:
+- classification algo
+- Input data (classified into two parts by hyper plane)
+- the distance of hyperplane is measured from each point and it is tried to keep the distance minimum from all the points
+
+Decision Tree, Random Forest and Boosting Machine Learning Algo:
+Decision Tree is an ML algo 
+
+Random forest:(fig 1.2)
+    - It is made up of many decision tree algos
+    - CARTs (algo used for classification)
+    - Input goes from many decision trees and get ouput from each of them and then we decide on the basis of votes that which answer is to be selected
+
+Boost ML Algo (Weak learning) : (fig 1.3)
+    - doesnot repeat its mistakes
+    - data given to machine 
+    - trained on data
+    - mistakes done by machine during training are not repeated during retraining
+
+SVM is also used.
+
+Back to DL:
+- what is better in nn?
+- What makes DL different?
+{
+- feature engineering is automated.
+- Accuracy and performance of NN is very high especially on BIG DATA
+- Learning happens layer-by-layer
+(edges/corners, objects, the main picture made up of objects, detection of picture)
+- Middle layers/ Hidden layers
+- all layers learn simultaneously
+- if one layer knows one thing all layers know it
+- if a new thing comes they learn it together.
+}
+
+Why deep learning, Why now?
+- CNN 
+- LSTM
+{
+    Hardware (reqd for big data, GPU, TPU, QPU)
+    data (data from internet)
+    Algorithmic advances (optimizers, loss functions, weights regularization)
+}
+
+Hardware:
+we used CPU but for images and videos we used GPU
+TPU are available for handling and processing tensors
+
+data availability:
+we didnot have much data 
+if it was there, not much resources were there to collect/process/store that
+Tabular data is Structured
+Text, images, video, audio (unstructured)
+data is very much required for any algo of ML/DL
+
+Algorithms:
+- SVM 
+- gradient descent optimizers
+- loss functions
+- weight regularization
+
+
+New wave of Investment is here
+manufacture companies
+production companies
+companies are innovating towards DL/ML
+
+The Democratization of DL:
+its very easy to use DL
+it was very tough to code on TF 1.0
+Keras was seperate library
+TF 2.0 is introduced with builtin Keras library
+
+DL is simple
+DL is scalable
+DL is versatile and reuseable
+
+Simplicity:
+Data to number(vectorization)
+it is very simple to work with it 
+vectorization
+normalization (brings the values of all the colums b/w zero and 1 to normalize the resultant answer)
+Features are extracted by machine automatically
+
+Scalability:
+As we train the DL model on cpu, gpu, tpu the code remains same
+
+Reusable:
+We dont have to restart the model if we have a model trained on 2000000 images and we get 50 more images so we can train our model on just those and these will be added automatically to that 2000000 images trained model (enhancement)
+if we train a model for something we can use it for another thing as well like we trained it on images we can use it for videos
+Transfer learning is present in DL.
+
+
+
