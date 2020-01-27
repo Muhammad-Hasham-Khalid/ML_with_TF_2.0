@@ -186,6 +186,3 @@ Reusable:
 We dont have to restart the model if we have a model trained on 2000000 images and we get 50 more images so we can train our model on just those and these will be added automatically to that 2000000 images trained model (enhancement)
 if we train a model for something we can use it for another thing as well like we trained it on images we can use it for videos
 Transfer learning is present in DL.
-
-
-
