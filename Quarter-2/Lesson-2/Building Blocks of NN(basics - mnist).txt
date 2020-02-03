@@ -1,0 +1,123 @@
+mnist normal images Dataset
+mnist fashion dataset
+How does a NN work?
+Scalar, vector, matrix, 2d, 3d data
+
+Convert data to vector is called vectorization
+
+Back propagation 
+Front Propagation
+optimizer
+loss function
+
+Classes and Labels:
+Tabular form of data (columns - features)
+input 
+output (labels)
+
+Table - Dataset : (population)
+Training Dataset
+Testing Dataset (for Evaluation of accuracy)
+Validation Data
+
+a row is called sample/record
+every sample has a label (input - output)
+
+ML problems:
+Classification problem (image - labels)
+where there is a discrete value for output is classification problem
+
+Regression problem (continuous answers)
+
+Clustering problem (unsupervised learning, data divided into clusters)
+
+Discuss Data sets for Practical:
+
+
+datasets :
+mnist (7000 images, labels, handwritten digits)
+6000 images (training)
+1000 images (testing)
+
+Accuracy:
+True positive
+True negative
+False positive
+False negative
+
+mnist fashion (7000 images, labels, clothes images, images are grayscale)
+
+grayscale images = ( R + G + B ) / 3
+easy to be trained
+
+Y = WX + B
+w , b ==> weights
+x     ==> input
+y     ==> output
+
+activation functions:
+eyes and ears get many data but only relevant details go to the brain for processing (this is similar to activation function)
+
+Confusion Matrix: (for accuracy)
+
+True positive:
+    it was positive and was predicted correctly as positive
+True negative:
+    it was negative and was predicted correctly as negative
+False positive:
+    it was positive and was predicted wrong
+False negative:
+    it was negative and was predicted wrong
+    
+Discussing different functions:
+Layers.Dense(512, activation='relu', input_shape=(28 * 28,)))
+- Dense means fully connected each node is conected to previous and next layer's each node
+
+- input_shape(28 * 28 ,)  // input matrix for first layer and its size is fixed (rows, columns)
+- in this function we have not given the column value thus it will be 1
+- all numbers are brought into one column dimension changed from 2D to 1D
+
+activation Function:
+It makes the important and relevant data go to the next layer and stops the irrelevant data
+- converts linearity into non linearity
+ as y = wx + b (linear eq)
+ convert this linnear to non-linear
+ 
+as this is a dense model so the ouput of the previous layer becomes the input for the next layer 
+thus second time we dont have to define the input size
+// network.add(layers.Dense(10, activation='softmax'))
+Activation function is according to problem:
+Classification Problem - linear regression
+multi classification - Softmax
+
+{
+    Softmax :
+    takes the probability for certain numbers and the number whose probability is highest will be taken
+}
+
+Network.compile(): 
+when the model will be trained what parameters will be there
+-optimizer = 'rmsprop' (gradient descent optimizer)
+-loss='categorical_crossentropy' 
+(loss func is acc to pb we use categorical_crossentropy for the classification problem)
+-metrics=['accuracy'] (metrics to observe)
+
+Preparing the image data:
+    wx + b = y
+    if value is large then the resultant will be large and the system will require higher processing power and more steps will be taken
+    thus we normalize the data (center tendency)
+    Nearest to mean (0 - 1)
+    
+Preparing Labels:
+Our labels were numbers 0-9 
+so we will change the type of our data to categorical as we have 10 diff types 0-9
+Basically it is one hot encode:
+the bit of the number which is present will be on(1) others will be off(0)
+
+Training the model:
+network.fit() # here the training starts
+epochs = number of iterations 
+
+we have a big data if we load and train all the data at once then it will consume a large amount of memory and processing thus we load the data and train in parts 
+batch_size : this is the size of each part
+
